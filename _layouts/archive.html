@@ -18,6 +18,7 @@ layout: default
   {% when '10' %}Oktober
   {% when '11' %}November
   {% when '12' %}December
+  {% endcase %}
     {% unless post.next %}<!-- first post -->
       <h4 class="archive__month">{{ month }}</h4>
     {% else %}

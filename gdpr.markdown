@@ -1,6 +1,6 @@
 ---
 title: GDPR
-date: 2018-05-24 13:31:00 -04:00
+date: 2020-12-11 16:41:00 +01:00
 position: 6
 layout: post
 ---

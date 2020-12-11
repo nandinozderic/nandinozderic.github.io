@@ -31,7 +31,7 @@
 
     {% if post.vimeo %}
     <iframe src="https://player.vimeo.com/video/{{post.vimeo}}?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreenn></iframe>
-    <p class="caption">Watch <a href="https://vimeo.com/{{post.vimeo}}" target="_blank">{{post.title}}</a> on Vimeo</p>
+    <p class="caption">Watch <a href="https://vimeo.com/{{post.vimeo}}" target="_blank">{{post.title}}</a> na Vimeo</p>
     {% elsif post.hero %}
     <p>
       <a href="{{post.url}}"><img src="{{post.hero}}" alt="{{post.title}}" /></a>
@@ -44,7 +44,7 @@
       {{ post.content | markdownify }}
     {% endif %}
     {% if is_excerpt and post.excerpt != post.content %}
-      <a href="{{ post.url }}" class="article__content__more">Preberi več</a>
+      <a href="{{ post.url }}" class="article__content__more">Preberi več →</a>
     {% endif %}
   </section>
 </article>

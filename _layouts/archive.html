@@ -5,20 +5,6 @@ layout: default
 <ul class="archive__items">
   {% for post in site.posts %}
     {% assign month = post.date | date: '%B %Y' %}
-  {% case month %}
-  {% when '1' %}Januar
-  {% when '2' %}Februar
-  {% when '3' %}Marec
-  {% when '4' %}April
-  {% when '5' %}Maj
-  {% when '6' %}Junij
-  {% when '7' %}Julij
-  {% when '8' %}August
-  {% when '9' %}September
-  {% when '10' %}Oktober
-  {% when '11' %}November
-  {% when '12' %}December
-  {% endcase %}
     {% unless post.next %}<!-- first post -->
       <h4 class="archive__month">{{ month }}</h4>
     {% else %}

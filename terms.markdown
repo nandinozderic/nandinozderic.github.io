@@ -1,5 +1,5 @@
 ---
-title: Pogoji
+title: Pogoji uporabe
 date: 2020-12-11 16:45:00 +01:00
 permalink: "/pogoji-uporabe"
 position: 2

@@ -1,28 +1,28 @@
 ---
-title: Siteleaf
-timezone: America/New_York
+title: Zapeljivec
+timezone: Europe/Ljubljana
 collections:
   gallery:
-    title: Gallery
+    title: Galerija
     output: false
   posts:
-    title: Posts
+    title: Objave
     output: true
   blog_tags:
-    title: Tags
+    title: Oznake
     output: true
   tweets:
-    title: Testimonials
+    title: Mnenja
     output: false
   uploads:
-    title: Uploads
+    title: Datoteke
     output: true
 defaults:
 - scope:
     path: ''
     type: posts
   values:
-    permalink: "/blog/:title/"
+    permalink: "/:title"
     layout: post
     image: 
     description: 
@@ -40,9 +40,8 @@ defaults:
   values:
     image: 
     link: 
-url: https://www.siteleaf.com
-description: Built for developers, Loved by everyone. Supports Jekyll, user collaboration,
-  publishing to AWS S3, GitHub Pages, FTP, and more.
+url: https://nandinozderic.github.io/
+description: Začuti ljubezen.
 permalink: pretty
 exclude:
 - Gruntfile.js
@@ -71,24 +70,24 @@ per_page: 12
 date_format: "%b %d, %Y"
 google_analytics: UA-1666437-33
 twitter:
-  username: siteleaf
+  username: 
 logo: "/assets/logo.svg"
 future: true
 header_nav:
   Blog: "/blog/"
-  Gallery: "/gallery/"
-  Plans: "/plans/"
-  Learn: https://learn.siteleaf.com
-  Log in: https://manage.siteleaf.com
+  Gallery: "/galerija/"
+  Storitve: "/storitve/"
+  #Learn: https://learn.siteleaf.com
+  #Log in: https://manage.siteleaf.com
 footer_nav:
-  Features: "/features/"
-  Press: https://siteleaf.dropmark.com/326718
-  Privacy: "/privacy/"
-  Terms: "/terms/"
-  GDPR: "/gdpr/"
-  Status: https://status.siteleaf.com
-  Chat: https://chat.siteleaf.com
-  Twitter: https://twitter.com/siteleaf
+  O nas: "/O nas/"
+  Mediji: https://nandinozderic.github.io/mediji
+  Varstvo podatkov: "/varstvo-podatkov"
+  Pogoji uporabe: "/pogoji-uporabe"
+  GDPR: "/gdpr"
+  #Status: https://status.siteleaf.com
+  #Chat: https://chat.siteleaf.com
+  #Twitter: https://twitter.com/siteleaf
 scripts: |-
   <script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script><script>window.Beacon('init', '13d71c30-bf3c-49d8-a515-60646ded4459')</script>
   <script async src='https://r.wdfl.co/rw.js' data-rewardful='6def54'></script>

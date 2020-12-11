@@ -1,7 +1,7 @@
 ---
-title: Terms
-date: 2015-11-10 19:00:00 -05:00
-permalink: "/terms/"
+title: Pogoji
+date: 2020-12-11 16:45:00 +01:00
+permalink: "/pogoji-uporabe"
 position: 2
 layout: post
 ---

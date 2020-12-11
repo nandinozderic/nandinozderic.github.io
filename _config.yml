@@ -67,7 +67,7 @@ sass:
   sass_dir: styles/
   style: compressed
 per_page: 12
-date_format: "%d %b, %Y"
+date_format: "%-d %b, %Y"
 google_analytics: UA-1666437-33
 twitter:
   username: 

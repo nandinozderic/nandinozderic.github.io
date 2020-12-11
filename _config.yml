@@ -80,7 +80,7 @@ header_nav:
   #Learn: https://learn.siteleaf.com
   #Log in: https://manage.siteleaf.com
 footer_nav:
-  O nas: "/o-nas/"
+  O nas: "/o-nas"
   Mediji: https://nandinozderic.github.io/mediji
   Varstvo podatkov: "/varstvo-podatkov"
   Pogoji uporabe: "/pogoji-uporabe"

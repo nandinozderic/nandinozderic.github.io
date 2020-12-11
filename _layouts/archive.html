@@ -4,7 +4,7 @@ layout: default
 
 <ul class="archive__items">
   {% for post in site.posts %}
-  {% assign month = page.date | date: "%-m" %}
+  {% assign month = post.date | date: "%-m" %}
 {{ post.date | date: "%-d" }}
 {% case month %}
   {% when '1' %}Januar

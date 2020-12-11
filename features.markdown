@@ -1,12 +1,12 @@
 ---
-title: New in v2
-permalink: "/features/"
+title: Kdo smo?
+permalink: "/o-nas"
 position: 4
 layout: post
 color: yellow
 button:
-  title: Get started
-  url: https://manage.siteleaf.com/signup
+  title: Brezplačni nasvet
+  url: https://nandinozderic.github.io/brezplacen-nasvet
 ---
 
 ## Open source superpowers

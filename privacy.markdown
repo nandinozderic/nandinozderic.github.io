@@ -1,7 +1,7 @@
 ---
-title: Privacy
-date: 2015-11-10 19:00:00 -05:00
-permalink: "/privacy/"
+title: Varstvo podatkov
+date: 2020-12-11 16:46:00 +01:00
+permalink: "/varstvo-podatkov"
 position: 1
 layout: post
 ---

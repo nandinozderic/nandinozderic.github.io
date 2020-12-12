@@ -1,6 +1,6 @@
-{% assign m = page.date | date: “%-m” %}
+{% assign B = page.date | date: “%B” %}
 {{ page.date | date: “%-d” }}
-{% case m %}
+{% case B %}
 {% when ‘1’ %}Januar
 {% when ‘2’ %}Februar
 {% when ‘3’ %}Marec

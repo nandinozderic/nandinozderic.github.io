@@ -4,7 +4,7 @@ layout: default
 
 <ul class="archive__items">
   {% for post in site.posts %}
-    {% assign month = post.date | date: '%B %Y' %}
+    {% assign month = post.date | date: '%B %Y' %} {% include locale-date.html %}
     {% unless post.next %}<!-- first post -->
       <h4 class="archive__month">{{ month }}</h4>
     {% else %}

@@ -1,5 +1,5 @@
 ---
-title: Zapeljivec - domača stran
+title: Zapeljivec - Domov
 position: 0
 header_title: Svetovanje moškim pri doseganju željenih ciljev v ljubezenskih odnosih.
 subtitle: |-

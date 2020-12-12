@@ -19,9 +19,9 @@
         {% endfor %}
       </ul>
     {% endif %}
-    {% if post.date %}
-    <time class="article__date" datetime="{{ post.date | date_to_xmlschema }}">{% if page.url == '/privacy/' or page.url == '/terms/' %}Last updated: {% endif %}{{ post.date | date: site.date_format }}</time>
-    {% endif %}
+    <time class="article__date" datetime="{{ post.date | date_to_xmlschema }}">
+  {% if page.url == '/privacy/' or page.url == '/terms/' %}Last updated: {% endif %}
+  {% include locale-date.html %}</time>
   </section>
   {% endif %}
   <section class="article__content">

@@ -9,7 +9,7 @@ layout: default
       <h4 class="archive__month">{{ month }}</h4>
     {% else %}
       {% capture next_month %}{{ post.next.date | date: '%B %Y' }}{% endcapture %}
-      {% if month != next_month %}
+      {% if month != next_month %} {% include locale-date.html %}
         <h4 class="archive__month">{{ month }}</h4>
       {% endif %}
     {% endunless %}
@@ -17,5 +17,5 @@ layout: default
       <time class="archive__day" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d' }}</time>
       <a class="archive__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </li>
-  {% endfor %} {% include locale-date.html %}
+  {% endfor %} 
 </ul>

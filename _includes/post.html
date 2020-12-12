@@ -20,8 +20,8 @@
       </ul>
     {% endif %}
     <time class="article__date" datetime="{{ page.date | date: "%-d %B %Y"}}">
-  {% if page.url == '/privacy/' or page.url == '/terms/' %}Last updated: {% endif %}
-  {% include locale-date.html %}</time>
+  {% if page.url == '/privacy/' or page.url == '/terms/' %}Last updated: {% include locale-date.html %}
+  </time>
   </section>
   {% endif %}
   <section class="article__content">

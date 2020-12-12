@@ -4,7 +4,7 @@ layout: default
 
 <ul class="archive__items">
   {% for post in site.posts %}
-    {% assign month = post.date | date: '%B %Y' %} Last updated:{% include locale-date.html %}
+    {% assign month = post.date | date: '%B %Y' %}
     {% unless post.next %}<!-- first post -->
       <h4 class="archive__month">{{ month }}</h4>
     {% else %}
@@ -17,5 +17,5 @@ layout: default
       <time class="archive__day" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d' }}</time>
       <a class="archive__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </li>
-  {% endfor %}
+  {% endfor %} {% include locale-date.html %}
 </ul>

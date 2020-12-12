@@ -8,8 +8,8 @@ layout: default
     {% unless post.next %}<!-- first post -->
       <h4 class="archive__month">{{ month }}</h4>
     {% else %}
-      {% capture next_month %}{{ post.next.date | date: '%B %Y' }}{% endcapture %}
-      {% if month != next_month %} {% include locale-date.html %}
+      {% capture next_month %}{{ post.next.date | date: '%B %Y' }}{% include locale-date.html %}{% endcapture %}
+      {% if month != next_month %} 
         <h4 class="archive__month">{{ month }}</h4>
       {% endif %}
     {% endunless %}

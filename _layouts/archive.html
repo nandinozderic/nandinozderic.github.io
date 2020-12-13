@@ -3,16 +3,20 @@ layout: default
 ---
 
 <ul class="archive__items">
-  {% for post in site.posts %}
-    {% assign month = post.date | date: '%m %Y' %}
-    {% unless post.next %}<!-- first post -->
-      <h4 class="archive__month">{{ month }}</h4>
-    {% else %}
-      {% capture next_month %}{{ post.next.date | date: '%m %Y' }}{% endcapture %}
-      {% if month != next_month %} 
-        <h4 class="archive__month">{{ month }}</h4>
-      {% endif %}
-    {% endunless %}
+  {% case month %}
+  {% when ‘1’ %}Januar
+  {% when ‘2’ %}Februar
+  {% when ‘3’ %}Marec
+  {% when ‘4’ %}April
+  {% when ‘5’ %}Maj
+  {% when ‘6’ %}Junij
+  {% when ‘7’ %}Julij
+  {% when ‘8’ %}August
+  {% when ‘9’ %}September
+  {% when ‘10’ %}Oktober
+  {% when ‘11’ %}November
+  {% when ‘12’ %}December
+    {% endcase %}
     <li class="archive__item">
       <time class="archive__day" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d' }}</time>
       <a class="archive__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
